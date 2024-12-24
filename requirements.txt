@@ -1,0 +1,12 @@
+pypdf
+langchain
+chromadb # Vector storage
+pytest
+boto3
+langchain_ollama
+langchain_aws
+pysqlite3-binary
+langchain_chroma
+langchain_community
+langchain-cli
+streamlit
