@@ -86,7 +86,8 @@ def main():
                 st.error(f"An error occurred: {str(e)}")
         else:
             st.warning("Sorry, I didn’t understand your question. Do you want to connect with a live agent?")  
-            # ---------------------------------------------------------------------------------------------- #    
+
+# ---------------------------------------------------------------------------------------------- #    
 # --- FOOTER ---
 
 footer = """<style>

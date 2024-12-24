@@ -10,3 +10,4 @@ langchain_chroma
 langchain_community
 langchain-cli
 streamlit
+streamlit_chat==0.0.2.2
