@@ -72,3 +72,7 @@ Open the APP in your local browser.Type a query in the input box, and the chatbo
 ## Example
 ![Response Example](example.png)
 
+## Demo Video
+Watch the demo video here: [demo.mp4](./Demo.mp4)
+
+
