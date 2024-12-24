@@ -1,5 +1,8 @@
 # AI PDF Chatbot 
 
+## Demo Video
+Watch the demo video here: [demo.mp4](./Demo.mp4)
+
 ## Model Configuration
 - **Model**: Mistral model from **Ollama** for generating responses.
 - **Embedding**: Custom function for converting document content into embeddings for similarity searches.
@@ -72,7 +75,6 @@ Open the APP in your local browser.Type a query in the input box, and the chatbo
 ## Example
 ![Response Example](example.png)
 
-## Demo Video
-Watch the demo video here: [demo.mp4](./Demo.mp4)
+
 
 
