@@ -1,4 +1,4 @@
-# AI PDF Chatbot - Documentation
+# AI PDF Chatbot 
 
 ## Model Configuration
 - **Model**: Mistral model from **Ollama** for generating responses.
