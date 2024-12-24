@@ -54,8 +54,40 @@ def query_rag(query_text: str):
           return "Sorry, I couldn’t retrieve an appropriate response to your question."
     return response.strip() if isinstance(response,str) else str(response), sources
 
+# Streamlit app UI
+def main():
+    st.title("AI pdf Chatbot")
+    st.write("Enter a query to search related to the uploaded document")
 
-            # ---------------------------------------------------------------------------------------------- #    
+    # User input for the query
+    query_text = st.text_input("Enter your query:", "")
+
+    # Button to submit query
+    if st.button("Get Response"):
+        if query_text.strip():
+            try:
+                # Query the RAG system
+                with st.spinner("Processing your query..."):
+                   response, sources = query_rag(query_text)
+                
+                # Display the response
+                st.subheader("Response:")
+                if response!={}:
+                    st.write(response)
+                else:   
+                    st.write("Sorry, I didn’t understand your question. Do you want to connect with a live agent?") 
+                # Display the sources
+                if sources:
+                    st.subheader("Sources:")
+                    st.write(", ".join(sources))
+                else:
+                    st.write("No sources available.")
+            except Exception as e:
+                st.error(f"An error occurred: {str(e)}")
+        else:
+            st.warning("Sorry, I didn’t understand your question. Do you want to connect with a live agent?")  
+
+# ---------------------------------------------------------------------------------------------- #    
 # --- FOOTER ---
 
 footer = """<style>
